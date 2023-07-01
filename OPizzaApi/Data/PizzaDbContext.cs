@@ -8,5 +8,6 @@ namespace OPizzaApi.Data
         public PizzaDbContext(DbContextOptions<PizzaDbContext> options) : base(options) { }
 
         public DbSet<Pizza> pizzas { get; set; }
+        public DbSet<Order> orders { get; set; }
     }
 }
